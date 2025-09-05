@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Joke Book</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<!-- Cover -->
+	<div id="cover" class="page active">
+		<h1>Joke Book Technical Test</h1>
+		<button id="startBtn">Enter</button>
+				<h3>Created and Editted by Joel Colbeck</h3>
+				<h4>Please leave any feedback below for improvements!</h4>
+				<textarea> </textarea> <!-- Doesn't actually work but usually something I include in my about pages --!>
+	</div>
+	<!-- Categories Page -->
+	<div id="categories" class="page">
+		<h2>Select between Categories to Display Jokes.</h2>
+    <div class="btn-group">
+      <button class="categoryBtn" data-category="general">General</button>
+      <button class="categoryBtn" data-category="knock-knock">Knock-Knock</button>
+      <button class="categoryBtn" data-category="programming">Programming</button>
+    </div>
+		<ul id="jokeList"></ul>
+		<button id="backToCover">---Back---</button>
+	</div>
+	<!-- Jokes page -->
+	<div id="jokeDetails" class="page">
+		<h2> Joke Displayed Below </h2>
+		<p id="setup" class="h1"></p>
+		<p id="punchline" class="highlight"></p>
+		<button id="backToList">Back to List</button>
+	</div>
+		<script src="script.js"></script>
+</body>
+</html>
